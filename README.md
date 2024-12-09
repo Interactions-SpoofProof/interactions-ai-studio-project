@@ -17,18 +17,18 @@ Dataset: 8,000 audio samples for training (6,400 authentic, 1,600 synthetic) and
 # Results and Key Findings
 Results
 
-F1 score above 90% was achieved: 97%
+-F1 score above 90% was achieved: 97%
 
-False positive rate was extremely low at 1%
+-False positive rate was extremely low at 1%
 
-AUC score was extremely high at 99%
+-AUC score was extremely high at 99%
 
 
 Reducing overfitting
 
-Dropout layers and L2 regularization were added to reduce overfitting
+-Dropout layers and L2 regularization were added to reduce overfitting
 
-Validation loss had less of an increase for the adjusted model indicating that overfitting was reduced 
+-Validation loss had less of an increase for the adjusted model indicating that overfitting was reduced 
 
 # Potential Next Steps
 Since our final model still had overfitting issues, we would like to try out more strategies to reduce overfitting so that the model will be better at generalizing to new data. 
