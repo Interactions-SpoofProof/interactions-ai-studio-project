@@ -7,7 +7,9 @@ Dataset: 8,000 audio samples for training (6,400 authentic, 1,600 synthetic) and
 
 # Goals
 -Build a binary classification model labelling speech as authentic or synthetic 
+
 -Create synthetic audio to add onto the Hugging Face authentic audio dataset
+
 -Identify spoofed audio calls with a target F1 score of 90% or higher
 
 # Methodology
@@ -19,5 +21,7 @@ Since our final model still had overfitting issues, we would like to try out mor
 
 # Individual contributions
 Aayat: Prepared the 8000 authentic audios, preprocessing the data, converting audios to number arrays 
+
 Debasree: Made 1000 synthetic audios using GoogleGTTS library, preprocessing the data, reduced overfitting and created the visualizations of the results of our model
+
 Marilyn: Made 1000 synthetic audios using Pyttsx3 library, preprocessing the data, training neural networks and 1D CNN model and tuning the hyperparameters to increase accuracy
