@@ -36,6 +36,6 @@ Since our final model still had overfitting issues, we would like to try out mor
 # Individual contributions
 Aayat: Prepared the 8000 authentic audios, preprocessing the data, converting audios to number arrays 
 
-Debasree: Made 1000 synthetic audios using GoogleGTTS library, preprocessing the data, reduced overfitting and created the visualizations of the results of our model
+Debasree: Made 1000 synthetic audios using GoogleGTTS library, preprocessing the data, made feature vectors for training dataset, reduced overfitting and created the visualizations of the results of our model
 
-Marilyn: Made 1000 synthetic audios using Pyttsx3 library, preprocessing the data, training neural networks and 1D CNN model and tuning the hyperparameters to increase accuracy
+Marilyn: Made 1000 synthetic audios using Pyttsx3 library, preprocessing the data,  made feature vectors for testing dataset, training neural networks and 1D CNN model and tuning the hyperparameters to increase accuracy
