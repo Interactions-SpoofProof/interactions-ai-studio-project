@@ -29,6 +29,8 @@
      * With mean pooling: F1 score of 82%
    * 1D Convolutional Neural Network (CNN)- works well with sequential data like audio as it can detect temporal (time-based) changes
      * F1 score: 97%
+    
+  Since the 1D CNN model produced the highest F1 score, we chose it for our final model. However, we noticed that it was overfitting, so we added dropout and regularization layers to our model.
 8. Model Improvements
    * We finetuned our models by adjusting hyperparameters and testing different numbers of neurons and layers in order to achieve the highest F1 score.
 
