@@ -19,12 +19,16 @@
 3. Building Training and Testing Dataset
    * The HuggingFace dataset contained many features for metadata such as age and gender, but since most of the features columns were missing many values, we stuck with just using the audio column, which contained the actual mp3 audio file. We manually split up the training and testing datasets since we wanted the same number of each type of synthetic audio we generated. We did a 80/20 split for the train and test set, and the authentic to spoofed ratio was also 80/20. 
 5. Data Preprocessing
-   * The first step for preprocessing was changing the audio files to a numerical form since the models only work with numerical data. We changed the mp3 audio files into 1-dimensional number arrays by using the Librosa library. Then we generated feature vectors from the audios by using the Wav2Vec model. These feature vectors were super large, so we reduced them down to be size (300x256). We also used normalization and flattened the feature vectors into 1D arrays since the models only accept 1D arrays. 
+   * The first step for preprocessing was changing the audio files to a numerical form since the models only work with numerical data. We changed the mp3 audio files into 1-dimensional number arrays by using the Librosa library. Then we generated feature vectors from the audios by using the Wav2Vec model. These feature vectors were super large, so we reduced them down to be size (300x256). We also used normalization and flattened the feature vectors into 1D arrays since the models only accept 1D arrays. We also tried another version of preprocessing in which we reduced the size of the feature vectors even further by utilizing mean pooling. This essentially took the average of each embedding dimension so that the vector was reduced to a size of 768.
 7. Model Training and Selection
    * We tested 3 different models: logistic regression, neural network, and 1D CNN model.
    * Logistic regression- simpler model that can be quickly trained
+     * F1 score: 62%
    * Neural network- can handle very large input sizes and can model more complex relationships
+     * Without mean pooling: F1 score <30%
+     * With mean pooling: F1 score of 82%
    * 1D Convolutional Neural Network (CNN)- works well with sequential data like audio as it can detect temporal (time-based) changes
+     * F1 score: 97%
 8. Model Improvements
    * We finetuned our models by adjusting hyperparameters and testing different numbers of neurons and layers in order to achieve the highest F1 score.
 
