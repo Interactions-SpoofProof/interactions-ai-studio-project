@@ -1,11 +1,10 @@
 # Interactions-AI-Studio-Project
 
 # Project Overview 
-Problem: Recognize spam calls from real calls in order to provide more efficient customer service
-Purpose: Operating within the realm of cybersecurity and audio technology, this project aligns with Interactions LLC’s mission of enhancing AI-driven customer service by allocating customer service resources to real customers.
-Dataset: 8,000 audio samples for training (6,400 authentic, 1,600 synthetic) and 2,000 samples for testing (1,600 authentic, 400 synthetic), drawn from multiple sources and stored into CSV files. 20% of the dataset were synthetic-generated audios.
-Tools: Google Colab, gTTS, Pyttsx3, Librosa, Wav2Vec, Tensorflow, Keras, Scikit-learn
-
+* Problem: Recognize spam calls from real calls in order to provide more efficient customer service for the AI customer service company Interactions
+* Purpose: Operating within the realm of cybersecurity and audio technology, this project aligns with Interactions LLC’s mission of enhancing AI-driven customer service by allocating customer service resources to real customers.
+* Dataset: 8,000 audio samples for training (6,400 authentic, 1,600 synthetic) and 2,000 samples for testing (1,600 authentic, 400 synthetic), drawn from multiple sources and stored into CSV files. 20% of the dataset were synthetic-generated audios.
+* Tools: Google Colab, gTTS, Pyttsx3, Librosa, Wav2Vec, Tensorflow, Keras, Scikit-learn
 
 # Goals
 * Build a binary classification model labelling speech as authentic or synthetic 
@@ -15,7 +14,11 @@ Tools: Google Colab, gTTS, Pyttsx3, Librosa, Wav2Vec, Tensorflow, Keras, Scikit-
 * Identify spoofed audio calls with a target F1 score of 90% or higher
 
 # Methodology
-
+1. Generate synthetic audio
+2. Building Training and Testing Dataset
+3. Data Preprocessing
+4. Model Training and Selection
+5. Model Improvements
 # Results and Key Findings
 Results
 
