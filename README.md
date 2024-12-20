@@ -42,7 +42,7 @@ Results
 
 * AUC score was extremely high at 99%
   
-* These scores were around the same for the training and testing sets, demonstrating that our model is generalizing well to unseen data. This model 
+* These scores were around the same for the training and testing sets, demonstrating that our model is generalizing well to unseen data. This model has the potential to help companies like Interactions filter out spam calls and dedicate their resources to real customers, providing a more efficient and streamlined customer service experience.
 
 
 Reducing overfitting
